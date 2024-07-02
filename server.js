@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 //START_ASYNC -do not remove notes, place code between correct pair of notes.
 
 
-
+const bcrpyt      = require('bcrypt');
 //END_ASYNC
 
 //START_SYNC
