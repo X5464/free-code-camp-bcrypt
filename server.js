@@ -3,7 +3,7 @@ const express     = require('express');
 const bodyParser  = require('body-parser');
 const fccTesting  = require('./freeCodeCamp/fcctesting.js');
 const app         = express();
-
+let bcrypt      = require('bcrypt');
 fccTesting(app);
 const saltRounds = 12;
 const myPlaintextPassword = 'sUperpassw0rd!';
@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 //START_ASYNC -do not remove notes, place code between correct pair of notes.
 
 
-const bcrpyt      = require('bcrypt');
+
 //END_ASYNC
 
 //START_SYNC
